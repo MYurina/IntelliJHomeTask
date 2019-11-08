@@ -11,12 +11,10 @@ public class Exersice13 {
         str2 = in.nextLine();
         int lenght1 = str1.length();
         int lenght2 = str2.length();
-        if (lenght1 == lenght2) {
-            System.out.println(str1 + " " + str2);
-        } else if (lenght1 < lenght2) {
-            System.out.println(str2);
+            if (lenght1 < lenght2) {
+            System.out.println("Вторая строка длинее" + str2);
         } else {
-            System.out.println(str1);
+            System.out.println("Первая строка длинее" +str1);
         }
 
     }
