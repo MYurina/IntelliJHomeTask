@@ -10,11 +10,12 @@ public class FinalEx3 {
         System.out.println("Введите количество рублей");
         double rubbles = in.nextDouble();
         double result = rubbles / kursDollar;
-        BigDecimal res = new BigDecimal(result);
-        BigDecimal result1;
+        //BigDecimal res = new BigDecimal(result);
+       // BigDecimal result1;
 // Using setScale() method
-        result1 = res.setScale(2, RoundingMode.HALF_UP);
-        System.out.println("Итого :" + result1 + "\n");
+       // result1 = res.setScale(2, RoundingMode.HALF_UP);
+        result = Math.round(result*100)/100.0d;
+        System.out.println("Итого :" + result + "\n");
 
     }
 }
